@@ -1,0 +1,125 @@
+<style>
+  
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #333);
+      overflow: hidden;
+      color: #e9bdbd;
+      margin: 0;
+      min-height: 100vh;
+      position: relative;
+      padding: 40px 20px;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle at center, #ff6f91 0%, transparent 70%);
+      opacity: 0.1;
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: rgba(50, 50, 50, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      border: 4px solid #555;
+    }
+
+    h1 {
+      color: #f5f5f5;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #f7c9c9;
+      margin: 0 0 15px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      background-color: #555;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff6f91;
+      transform: translateY(-2px);
+    }
+
+    .text {
+      max-width: 500px;
+    }
+
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    
+
+</style>
+
+
+
+    
+<head>
+    <title>home page</title>
+</head>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    <h1>Welcome to My Personal Website</h1>
+<div class="Profile">
+    <img src="me.jpg" alt="Profile Picture" class="img">
+    <div class="text">
+    <p>Hello! My name is fasika sisay </p> 
+   <p>This website showcases my resume, blog articles, and how to contact me.</p>
+    </div>
+</div>
+   <nav>
+    <a href="resume.html"> resume </a>
+    <a href="blog.html">  blog </a> 
+    <a href="contact.html">  contact </a> 
+</nav>
+    
+</body>
